@@ -1,0 +1,314 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #14213d;
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-brand h2 {
+  font-size: 22px;
+}
+
+.navbar-brand span {
+  font-size: 13px;
+  color: #b8c5d6;
+}
+
+.navbar-info {
+  font-size: 14px;
+  color: #dce6f2;
+}
+
+
+
+
+
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.date-filter label {
+  color: #14213d;
+  font-weight: 600;
+}
+
+.date-filter input {
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+
+.status-message {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #14213d;
+}
+
+.error-message {
+  color: #dc2626;
+}
+
+.error-message button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #14213d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  background-color: #f4f6f9;
+}
+
+.main-content .navbar {
+  width: 100%;
+}
+
+.dashboard {
+  padding: 30px 40px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    width: 180px;
+    padding: 20px 10px;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-brand span {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .sidebar-heading {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-menu {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar-menu a {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 15px;
+  }
+
+}
+
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dashboard section {
+  margin-bottom: 35px;
+  scroll-margin-top: 20px;
+}
+
+#data-quality {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#data-quality h2 {
+  color: #14213d;
+  margin-bottom: 15px;
+}
+
+
+
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quality-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.quality-card h3 {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.quality-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #14213d;
+  margin: 12px 0;
+}
+
+.quality-card span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.quality-note {
+  background: white;
+  padding: 22px;
+  margin-top: 20px;
+  border-radius: 10px;
+  line-height: 1.7;
+}
+
+.quality-note h3 {
+  color: #14213d;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .quality-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .quality-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.methodology-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.method-number {
+  display: inline-block;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.methodology-card h3 {
+  color: #14213d;
+  margin-bottom: 12px;
+}
+
+.methodology-card p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.methodology-card code {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: #eef2ff;
+  border-radius: 5px;
+  color: #14213d;
+}
+
+.methodology-note {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  line-height: 1.8;
+}
+
+.methodology-note h3 {
+  color: #14213d;
+  margin-bottom: 12px;
+}
+
+.methodology-note ul {
+  padding-left: 22px;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+}

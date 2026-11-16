@@ -1,0 +1,13 @@
+.chart-container {
+  background: white;
+  padding: 25px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.chart-container h2 {
+  color: #14213d;
+  font-size: 19px;
+  margin-bottom: 25px;
+}

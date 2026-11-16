@@ -1,0 +1,53 @@
+.dashboard {
+  padding: 30px 40px;
+}
+
+.dashboard-heading {
+  margin-bottom: 25px;
+}
+
+.dashboard-heading h1 {
+  font-size: 25px;
+  color: #14213d;
+}
+
+.dashboard-heading p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kpi-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.kpi-title {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.kpi-value {
+  color: #14213d;
+  font-size: 27px;
+  margin-top: 15px;
+}
+
+.kpi-unit {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.kpi-description {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 15px;
+}
