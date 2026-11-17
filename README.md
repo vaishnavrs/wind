@@ -190,9 +190,14 @@ docker compose down
 - The forecast cutoff and hourly averaging approach are analytical assumptions.
 - Results depend on the availability and completeness of the source API data.
 
+
 ## Deployment
 
-Deployment URL: To be added.
+Frontend: https://wind-bay.vercel.app/
+
+Backend API: https://windsight-backend-tno9.onrender.com/
+
+GitHub: https://github.com/vaishnavrs/wind
 
 ## Video Demonstration
 
